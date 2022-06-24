@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/_7sdp"
+        android:id="@+id/background"
+        android:background="@color/teal_200"
+        android:paddingVertical="@dimen/_6sdp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/card_blue"
+
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:paddingVertical="@dimen/_4sdp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/tvData"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="@dimen/_28ssp"
+                    android:text="150"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/tvdataType"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/lato_medium"
+                    android:textSize="@dimen/_21ssp"
+                    android:text="New Orders"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:id="@+id/ivDataIcon"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/_4sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_info" />
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
